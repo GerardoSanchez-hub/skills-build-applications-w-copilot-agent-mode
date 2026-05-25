@@ -2,6 +2,8 @@ import React, { useCallback, useEffect, useMemo, useState } from 'react';
 
 const resourceName = 'activities';
 
+// Codespaces backend endpoint example:
+// https://<CODESPACE_NAME>-8000.app.github.dev/api/activities/
 const getApiUrl = (resource) => {
   const codespaceName = process.env.REACT_APP_CODESPACE_NAME;
   const host = codespaceName
